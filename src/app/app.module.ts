@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,8 +18,11 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { DetailsComponent } from './components/details/details.component';
 import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { HttpErrorsInterceptors } from './interceptors/http-errors.interceptor';
+import { SpinnerInterceptor } from './interceptors/spinner.interceptor';
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, HomeComponent, DetailsComponent, GameTabsComponent],
+  declarations: [AppComponent, SearchBarComponent, HomeComponent, DetailsComponent, GameTabsComponent, SpinnerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +34,9 @@ import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
     MatSelectModule,
     MatTabsModule,
     MatIconModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule,
   ],
   providers: [
     {
@@ -38,7 +46,12 @@ import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
     },
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: HttpHeadersInterceptor,
+      useClass: HttpErrorsInterceptors,
+      multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: SpinnerInterceptor,
       multi: true,
     },
   ],
