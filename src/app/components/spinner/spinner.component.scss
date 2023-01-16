@@ -1,0 +1,39 @@
+@keyframes bouncing {
+  0% {
+    top: 55%;
+  }
+  100% {
+    top: 45%;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.page-overlay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1009;
+  background: rgba(116, 49, 155, 0.5);
+
+  .spinner {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 97%;
+    animation: bouncing 0.4s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
+  }
+}
