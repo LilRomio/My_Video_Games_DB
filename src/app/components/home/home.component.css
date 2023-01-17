@@ -1,0 +1,87 @@
+.filters {
+  max-width: 75em;
+  margin: 0.625em auto;
+  padding-left: 0.625em;
+}
+
+::ng-deep .mat-form-field-infix {
+  background-color: hsl(136deg, 65%, 51%);
+}
+::ng-deep .mat-select-value,
+::ng-deep .mat-select-arrow,
+::ng-deep .mat-form-field-hide-placeholder .mat-select-placeholder,
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
+  color: hsl(220deg, 16%, 96%) !important;
+  opacity: 1;
+}
+::ng-deep .mat-form-field-infix {
+  border-color: hsl(220deg, 16%, 96%) !important;
+  border-top: none;
+  padding-left: 0.3125em !important;
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
+  padding-left: 0.3125em;
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: hsl(220deg, 16%, 96%) !important;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 75em;
+  margin: 1.25em auto;
+}
+
+.game {
+  width: 17.5em;
+  margin: 0.625em;
+  height: 20.625em;
+  overflow: hidden;
+  border-radius: 0.3125em;
+  background-color: #202020;
+  box-shadow: 0.25em 0.1875em 0.5em 0em hsl(192deg, 70%, 51%);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.game:hover {
+  box-shadow: 0.25em 0.1875em 0.6875em 0.375em hsl(233deg, 8%, 62%);
+  transform: translateY(-0.1875em);
+}
+.game-thumb-container {
+  background-color: hsl(233deg, 26%, 24%);
+  position: relative;
+  height: 10.75em;
+  color: hsl(220deg, 16%, 96%);
+  text-align: center;
+}
+.game-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 10.75em;
+}
+.game-description {
+  padding: 1.25em;
+  height: 9.8125em;
+}
+.game-name {
+  color: hsl(220deg, 16%, 96%);
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-bottom: 1.25em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.game-platforms {
+  display: flex;
+  flex-direction: row;
+}
+.game-platform {
+  width: 1.375em;
+  margin-right: 0.625em;
+}/*# sourceMappingURL=home.component.css.map */

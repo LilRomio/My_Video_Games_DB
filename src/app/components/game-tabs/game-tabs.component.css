@@ -1,0 +1,48 @@
+.game-tabs {
+  background: hsl(233deg, 26%, 24%);
+  color: #fff;
+  text-align: left;
+  padding: 0.625em;
+}
+.game-tabs-par {
+  padding: 1.25em 1.25em 0 1.25em;
+  margin-bottom: 0;
+}
+.game-tabs-link {
+  color: hsl(220deg, 16%, 96%);
+}
+.game-tabs-votes {
+  margin-left: 1.25em;
+  display: flex;
+}
+.game-tabs-votes-count {
+  margin-left: 0.3125em;
+}
+.game-tabs ::ng-deep .mat-tab-labels {
+  justify-content: center;
+}
+.game-votes-up {
+  color: #5ee432;
+}
+.game-votes-down {
+  color: #ef4655;
+}
+.game-votes-count {
+  margin-left: 0.3125em;
+  margin-right: 0.625em;
+  vertical-align: super;
+}
+.game-description {
+  padding: 1.25em;
+}
+.game-screenshot {
+  margin-top: 0.3125em;
+  width: calc(50% - 0.625em);
+}
+.game-screenshot:nth-child(even) {
+  margin-left: 0.625em;
+}
+.game-trailer {
+  width: 100%;
+  margin: 1.25em 0;
+} /*# sourceMappingURL=game-tabs.component.css.map */

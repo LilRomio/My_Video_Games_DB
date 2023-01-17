@@ -1,30 +1,33 @@
+@import '../../globals/variables';
+
 .game {
   &-tabs {
-    background: rgb(63 81 181 / 61%);
+    background: $primary;
     color: #fff;
     text-align: left;
-    padding: 10px;
+    padding: 0.625em;
 
     &-par {
-      padding: 20px 20px 0 20px;
+      padding: 1.25em 1.25em 0 1.25em;
       margin-bottom: 0;
     }
 
     &-link {
-      color: #fff;
+      color: $light;
     }
 
     &-votes {
-      margin-left: 20px;
+      margin-left: 1.25em;
       display: flex;
 
       &-count {
-        margin-left: 5px;
+        margin-left: 0.3125em;
       }
     }
 
     ::ng-deep .mat-tab-labels {
       justify-content: center;
+      background-color: $tertiary;
     }
   }
 
@@ -37,27 +40,27 @@
     }
 
     &-count {
-      margin-left: 5px;
-      margin-right: 10px;
+      margin-left: 0.3125em;
+      margin-right: 0.625em;
       vertical-align: super;
     }
   }
 
   &-description {
-    padding: 20px;
+    padding: 1.25em;
   }
 
   &-screenshot {
-    margin-top: 5px;
-    width: calc(50% - 10px);
+    margin-top: 0.3125em;
+    width: calc(50% - 0.625em);
 
     &:nth-child(even) {
-      margin-left: 10px;
+      margin-left: 0.625em;
     }
   }
 
   &-trailer {
     width: 100%;
-    margin: 20px 0;
+    margin: 1.25em 0;
   }
 }
