@@ -1,8 +1,10 @@
+@import '../../globals/variables';
+
 .search {
   &-container {
     width: 100%;
-    height: 60px;
-    background-color: #323a45;
+    height: 3.75em;
+    background-color: $tertiary;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -14,16 +16,16 @@
 
   &-form {
     width: 100%;
-    max-width: 1200px;
+    max-width: 75em;
     margin: 0 auto;
   }
 
   &-input {
-    margin-left: 10px;
-    padding: 10px;
-    width: 300px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    margin-left: 0.625em;
+    padding: 0.625em;
+    width: 18.75em;
+    border-top-left-radius: 0.3125em;
+    border-bottom-left-radius: 0.3125em;
     outline: none;
     border: none;
   }
@@ -31,26 +33,26 @@
   &-button {
     border: none;
     outline: none;
-    background: #3f51b5;
-    padding: 10px;
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: #fff;
+    background: $secondary;
+    padding: 0.625em;
+    border-left: 0.0625em solid rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 0.3125em;
+    border-bottom-right-radius: 0.3125em;
+    color: $white;
     font-weight: 700;
     transition-duration: 0.3s;
     cursor: pointer;
     &:hover {
       color: #3f51b5;
       background-color: #fff;
-      border: 1px solid #3f51b5;
+      border: 0.0625em solid #3f51b5;
     }
   }
 }
 
 .logo {
-  margin-left: 10px;
-  color: #fff;
+  margin-left: 0.625em;
+  color: $light;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
