@@ -1,5 +1,5 @@
 @import '../../globals/variables';
-
+@import '../../globals/mixins';
 .search {
   &-container {
     width: 100%;
@@ -12,12 +12,21 @@
     top: 0;
     left: 0;
     z-index: 4;
+    @include breakpoint-down(large) {
+      height: 4.25em;
+    }
   }
 
   &-form {
     width: 100%;
     max-width: 75em;
     margin: 0 auto;
+    @include breakpoint-down(large) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 26.5em;
+    }
   }
 
   &-input {
@@ -28,6 +37,9 @@
     border-bottom-left-radius: 0.3125em;
     outline: none;
     border: none;
+    @include breakpoint-down(large) {
+      margin-left: 0.125;
+    }
   }
 
   &-button {
@@ -46,6 +58,9 @@
       color: #3f51b5;
       background-color: #fff;
       border: 0.0625em solid #3f51b5;
+      @include breakpoint-down(large) {
+        font-weight: 300;
+      }
     }
   }
 }
@@ -56,4 +71,10 @@
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
+  @include breakpoint-down(large) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.25em;
+  }
 }

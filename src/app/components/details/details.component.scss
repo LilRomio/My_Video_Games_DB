@@ -1,4 +1,5 @@
 @import '../../globals/variables';
+@import '../../globals/mixins';
 .details-wrapper {
   max-width: 56.25em;
   margin: 1.25em auto;
@@ -46,17 +47,27 @@
   &-banner {
     height: 27.625em;
     overflow: hidden;
+    position: relative;
 
     &-img {
       width: 100%;
-      filter: blur(0.3125em);
+    }
+    &-linear-gradient {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: green;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+      opacity: 0.3;
     }
   }
 
   &-content {
     text-align: center;
     position: relative;
-    top: -12.5em;
+    top: -18.5em;
   }
 
   &-header {
@@ -66,16 +77,32 @@
       font-weight: 700;
       line-height: 4.375em;
       white-space: nowrap;
+      @include breakpoint-down(large) {
+        font-size: 4.75vw;
+
+        margin-bottom: 1.25em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
 
     &-release-date {
       color: $light;
       font-weight: 700;
+      @include breakpoint-down(large) {
+        font-size: 2.75vw;
+        margin-bottom: 1.25em;
+      }
     }
 
     &-genres {
       color: $light;
       font-weight: 700;
+      @include breakpoint-down(large) {
+        margin-bottom: 1.25em;
+        font-size: 2.75vw;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 @import './app/globals/variables';
-
+@import './app/globals/mixins';
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -37,5 +37,16 @@ a {
 
   &-ai-c {
     align-items: center;
+  }
+}
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
   }
 }
