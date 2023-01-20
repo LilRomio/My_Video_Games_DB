@@ -21,8 +21,12 @@ import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HttpErrorsInterceptors } from './interceptors/http-errors.interceptor';
 import { SpinnerInterceptor } from './interceptors/spinner.interceptor';
+
+import { CommonModule } from '@angular/common';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
 @NgModule({
-  declarations: [AppComponent, SearchBarComponent, HomeComponent, DetailsComponent, GameTabsComponent, SpinnerComponent],
+  declarations: [AppComponent, SearchBarComponent, HomeComponent, DetailsComponent, GameTabsComponent, SpinnerComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -37,6 +41,8 @@ import { SpinnerInterceptor } from './interceptors/spinner.interceptor';
     MatButtonModule,
     MatProgressSpinnerModule,
     MatToolbarModule,
+
+    CommonModule,
   ],
   providers: [
     {
