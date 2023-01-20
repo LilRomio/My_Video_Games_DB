@@ -30,9 +30,9 @@
   }
 
   &-input {
-    margin-left: 0.625em;
-    padding: 0.625em;
-    width: 18.75em;
+    margin-left: 0.425em;
+    padding: 0.425em;
+    width: 16.75em;
     border-top-left-radius: 0.3125em;
     border-bottom-left-radius: 0.3125em;
     outline: none;
@@ -46,12 +46,12 @@
     border: none;
     outline: none;
     background: $secondary;
-    padding: 0.625em;
+    padding: 0.425em;
     border-left: 0.0625em solid rgba(0, 0, 0, 0.3);
     border-top-right-radius: 0.3125em;
     border-bottom-right-radius: 0.3125em;
     color: $white;
-    font-weight: 700;
+    font-weight: 500;
     transition-duration: 0.3s;
     cursor: pointer;
     &:hover {
@@ -66,7 +66,6 @@
 }
 
 .logo {
-  margin-left: 0.625em;
   color: $light;
   font-weight: 700;
   cursor: pointer;

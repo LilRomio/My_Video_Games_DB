@@ -3,11 +3,11 @@
 .filters {
   max-width: 75em;
   margin: 0.625em auto;
-  padding-left: 0.625em;
+
   @include breakpoint-down(large) {
     margin-top: 1.575em;
 
-    margin-left: 30%;
+    margin-left: 27%;
   }
 }
 
