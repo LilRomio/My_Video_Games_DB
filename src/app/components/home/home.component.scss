@@ -2,14 +2,10 @@
 @import '../../globals/mixins';
 .filters {
   max-width: 75em;
-  margin: 0.625em auto;
-
-  @include breakpoint-down(large) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.575em;
-  }
+  margin: 1.625em auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 ::ng-deep {

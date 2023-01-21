@@ -3,22 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailsComponent } from './components/details/details.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-
+import { ROUTES } from './globals/_route';
 const routes: Routes = [
   {
-    path: '',
+    path: ROUTES.home,
     component: HomeComponent,
   },
   {
-    path: ':game-search',
+    path: ROUTES.search,
     component: HomeComponent,
   },
   {
-    path: 'details/:id',
+    path: ROUTES.details,
     component: DetailsComponent,
   },
   {
-    path: '**',
+    path: ROUTES.error,
     component: NotFoundComponent,
   },
 ];
