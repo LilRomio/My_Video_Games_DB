@@ -1,3 +1,13 @@
+I started 2023 with a new Angular project.
+I used for this one HTML, SCSS, Git. I tryed to be more organized with the
+components and break the app into little pieces. I worked also with API calls,
+enviroments and interceptors things I didn't used previously. With KISS in mind
+I organized my CSS and my routes and used global styles, and variables. I added a
+spinner loader and a not found component
+
+
+[Check up the app on Vercel](https://my-video-games-db.vercel.app/)
+
 # NgVideoGameDb
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
